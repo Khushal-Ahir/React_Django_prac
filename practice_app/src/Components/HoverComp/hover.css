@@ -1,0 +1,23 @@
+th,
+td {
+  border: 1px solid darkmagenta;
+  text-align: center;
+  padding: 20px;
+}
+
+td.no:before {
+  content: "+";
+  font-size: 15px;
+  background-color: aqua;
+  border-radius: 10px;
+  width: 15px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.child {
+  display: none;
+}
+.child-on {
+  display: block !important;
+}
