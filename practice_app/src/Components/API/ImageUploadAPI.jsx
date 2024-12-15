@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const ImageUploadAPI = () => {
   const [image, setImage] = useState(null);
@@ -69,6 +70,7 @@ const ImageUploadAPI = () => {
             <img src={imgurl} alt="Uploaded" style={{ width: "300px" }} />
           </div>
         )}
+        <Link to="/update-image">Update Image</Link>
       </div>
     </>
   );
